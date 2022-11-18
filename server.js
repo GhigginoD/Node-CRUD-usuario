@@ -10,7 +10,7 @@ mongoose.connect(process.env.CONNECTIONSTRING)
     .then(() => app.emit("ready"))
     .catch(err => console.log(err));
 
-sapp.use(middlewareGlobal);
+app.use(middlewareGlobal);
 app.use(express.urlencoded({ extended: true }));
 app.set("views", path.resolve(__dirname, "src", "views"));
 app.set("view engine", "ejs");
