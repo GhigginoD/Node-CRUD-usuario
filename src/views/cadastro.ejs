@@ -1,0 +1,27 @@
+<%- include("includes/head"); %>
+<%- include("includes/nav"); %>
+<div class="container my-5">
+  <form action="usuarios/register" method="POST">
+    <div class="form-group">
+      <label for="inputFirstName">First Name*</label>
+      <input name="firstName" type="text" class="form-control" id="inputFirstName" aria-describedby="firstNameHelp" placeholder="Enter First Name">
+    </div>
+    <div class="form-group">
+      <label for="inputLastName">Last Name*</label>
+      <input name="lastName" type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp" placeholder="Enter Last Name">
+    </div>
+    <div class="form-group">
+      <label for="inputEmail">Email address*</label>
+      <input name="email" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll always share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="inputTelephone">Telephone</label>
+      <input name="telephone" type="text" class="form-control" id="inputTelephone" placeholder="Telephone">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+<%- include("includes/footer"); %>
